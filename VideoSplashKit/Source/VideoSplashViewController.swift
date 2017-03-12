@@ -20,7 +20,7 @@ open class VideoSplashViewController: UIViewController {
 
   fileprivate let moviePlayer = AVPlayerViewController()
   fileprivate var moviePlayerSoundLevel: Float = 1.0
-    open var contentURL: URL = URL(string: "")! {
+    open var contentURL: URL = URL(fileURLWithPath: "") {
     didSet {
       setMoviePlayer(contentURL)
     }
